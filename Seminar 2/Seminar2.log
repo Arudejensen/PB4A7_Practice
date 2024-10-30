@@ -1,0 +1,146 @@
+-----------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/annajensen/Documents/LSE/Quantitative Applications for Behavioural Science/
+> Seminars/Seminar 2/Seminar2.log
+  log type:  text
+ opened on:  12 Oct 2024, 18:50:33
+
+. use Seminar2, clear
+
+. 
+. *Question 1*
+. histogram yearsexp, percent
+(bin=36, start=1, width=1.1944444)
+
+. 
+. *Question 2*
+. summarize yearsexp, detail
+
+      number of years of work experience on the resume
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%            2              1
+ 5%            2              1
+10%            3              1       Obs               4,870
+25%            5              1       Sum of wgt.       4,870
+
+50%            6                      Mean           7.842916
+                        Largest       Std. dev.      5.044612
+75%            9             26
+90%           14             26       Variance       25.44811
+95%           19             26       Skewness       1.685004
+99%           26             44       Kurtosis       6.276497
+
+. 
+. *Question 3*
+. tabulate yearsexp
+
+  number of |
+   years of |
+       work |
+ experience |
+     on the |
+     resume |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          1 |         45        0.92        0.92
+          2 |        352        7.23        8.15
+          3 |        194        3.98       12.14
+          4 |        537       11.03       23.16
+          5 |        507       10.41       33.57
+          6 |        817       16.78       50.35
+          7 |        541       11.11       61.46
+          8 |        578       11.87       73.33
+          9 |        159        3.26       76.59
+         10 |        130        2.67       79.26
+         11 |        173        3.55       82.81
+         12 |         69        1.42       84.23
+         13 |        154        3.16       87.39
+         14 |        149        3.06       90.45
+         15 |         34        0.70       91.15
+         16 |         94        1.93       93.08
+         17 |          3        0.06       93.14
+         18 |         77        1.58       94.72
+         19 |         46        0.94       95.67
+         20 |         35        0.72       96.39
+         21 |         47        0.97       97.35
+         22 |          8        0.16       97.52
+         23 |          9        0.18       97.70
+         25 |          7        0.14       97.84
+         26 |        104        2.14       99.98
+         44 |          1        0.02      100.00
+------------+-----------------------------------
+      Total |      4,870      100.00
+
+. table yearsexp
+
+-------------------------------------------------------------
+                                                 |  Frequency
+-------------------------------------------------+-----------
+number of years of work experience on the resume |           
+  1                                              |         45
+  2                                              |        352
+  3                                              |        194
+  4                                              |        537
+  5                                              |        507
+  6                                              |        817
+  7                                              |        541
+  8                                              |        578
+  9                                              |        159
+  10                                             |        130
+  11                                             |        173
+  12                                             |         69
+  13                                             |        154
+  14                                             |        149
+  15                                             |         34
+  16                                             |         94
+  17                                             |          3
+  18                                             |         77
+  19                                             |         46
+  20                                             |         35
+  21                                             |         47
+  22                                             |          8
+  23                                             |          9
+  25                                             |          7
+  26                                             |        104
+  44                                             |          1
+  Total                                          |      4,870
+-------------------------------------------------------------
+
+. 
+. /*Tabulate returns frequence, percent, and cummulative percent. 
+> Table returns only frequence*/
+. 
+. *Question 4*
+. tab female
+
+     female |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |      1,124       23.08       23.08
+          1 |      3,746       76.92      100.00
+------------+-----------------------------------
+      Total |      4,870      100.00
+
+. 
+. *76.92% are female, and 23.08 are male*
+. 
+. *Question 5*
+. tab female, sum(yearsexp)
+
+            | Summary of number of years of work
+            |      experience on the resume
+     female |        Mean   Std. dev.       Freq.
+------------+------------------------------------
+          0 |   7.5302491   5.1862868       1,124
+          1 |   7.9367325   4.9982108       3,746
+------------+------------------------------------
+      Total |   7.8429158   5.0446116       4,870
+
+. 
+. *
+. log close
+      name:  <unnamed>
+       log:  /Users/annajensen/Documents/LSE/Quantitative Applications for Behavioural Science/
+> Seminars/Seminar 2/Seminar2.log
+  log type:  text
+ closed on:  12 Oct 2024, 18:50:34
+-----------------------------------------------------------------------------------------------
