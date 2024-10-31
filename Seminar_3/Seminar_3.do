@@ -1,11 +1,9 @@
-capture log close
 clear
 set more off 
-set mem 700m 
-cd "/Users/annajensen/Documents/LSE/Quantitative Applications for Behavioural Science/Seminars/Seminar 3"
-log using Seminar3.log, replace
+cd "/Users/annajensen/Documents/GitHub/PB4A7_Practice/Seminar_3"
+log using Seminar_3.log, replace
 
-use Seminar2, clear
+use "/Users/annajensen/Documents/GitHub/PB4A7_Practice/Seminar_2/Seminar_2.dta", clear
 
 *Question 1*
 regress yearsexp education 

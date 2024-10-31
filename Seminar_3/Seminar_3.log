@@ -1,12 +1,13 @@
 -----------------------------------------------------------------------
       name:  <unnamed>
-       log:  /Users/annajensen/Documents/LSE/Quantitative Applications 
-> for Behavioural Science/Seminars/Seminar 3/Seminar3.log
+       log:  /Users/annajensen/Documents/GitHub/PB4A7_Practice/Seminar_
+> 3/Seminar_3.log
   log type:  text
- opened on:  16 Oct 2024, 17:03:41
+ opened on:  30 Oct 2024, 12:02:27
 
 . 
-. use Seminar2, clear
+. use "/Users/annajensen/Documents/GitHub/PB4A7_Practice/Seminar_2/Semi
+> nar_2.dta", clear
 
 . 
 . *Question 1*
@@ -147,15 +148,65 @@ note: e1 omitted because of collinearity.
 . 
 . *Bonus question*
 . 
-. 
 . *Question 4*
+. regress yearsexp e5, vce(robust)
+
+Linear regression                               Number of obs     =    
+>   4,870
+                                                F(1, 4868)        =    
+>    2.33
+                                                Prob > F          =    
+>  0.1273
+                                                R-squared         =    
+>  0.0006
+                                                Root MSE          =    
+>  5.0437
+
+-----------------------------------------------------------------------
+> -------
+             |               Robust
+    yearsexp | Coefficient  std. err.      t    P>|t|     [95% conf. in
+> terval]
+-------------+---------------------------------------------------------
+> -------
+          e5 |  -.2641073   .1731698    -1.53   0.127    -.6035983    .
+> 0753837
+       _cons |   8.032943   .1531774    52.44   0.000     7.732646     
+> 8.33324
+-----------------------------------------------------------------------
+> -------
+
+. 
+. *No, the coefficient values do not change*
 . 
 . *Question 5*
+. anova yearsexp e5
+
+                         Number of obs =      4,870    R-squared     = 
+>  0.0006
+                         Root MSE      =    5.04373    Adj R-squared = 
+>  0.0003
+
+                  Source | Partial SS         df         MS        F   
+>  Prob>F
+              -----------+---------------------------------------------
+> -------
+                   Model |  68.556177          1   68.556177      2.69 
+>  0.1007
+                         |
+                      e5 |  68.556177          1   68.556177      2.69 
+>  0.1007
+                         |
+                Residual |  123838.27      4,868   25.439251  
+              -----------+---------------------------------------------
+> -------
+                   Total |  123906.83      4,869   25.448107  
+
 . 
 . log close
       name:  <unnamed>
-       log:  /Users/annajensen/Documents/LSE/Quantitative Applications 
-> for Behavioural Science/Seminars/Seminar 3/Seminar3.log
+       log:  /Users/annajensen/Documents/GitHub/PB4A7_Practice/Seminar_
+> 3/Seminar_3.log
   log type:  text
- closed on:  16 Oct 2024, 17:03:41
+ closed on:  30 Oct 2024, 12:02:27
 -----------------------------------------------------------------------
