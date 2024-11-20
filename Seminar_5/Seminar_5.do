@@ -1,4 +1,3 @@
-capture log off
 clear
 set more off 
 cd "/Users/annajensen/Documents/GitHub/PB4A7_Practice/Seminar_5"
@@ -42,4 +41,4 @@ the overall effort the mother puts into the pregnancy.*/
 *Question 7*
 reg birthweight smoker alcohol nprevist tripre0 tripre1 tripre2 tripre3
 
-log off
+log close

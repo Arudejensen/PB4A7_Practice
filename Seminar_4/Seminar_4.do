@@ -1,7 +1,7 @@
 clear
 set more off 
 cd "/Users/annajensen/Documents/GitHub/PB4A7_Practice/Seminar_4"
-log using Seminar_3.log, replace
+log using Seminar_4.log, replace
 
 use Seminar_4, clear
 
